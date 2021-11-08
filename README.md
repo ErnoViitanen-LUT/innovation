@@ -1,24 +1,14 @@
-# innovation
+# innovation project
 
-## Project setup
+## Project usage
 ```
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn serve
-```
-
-### Compiles and minifies for production
-```
 yarn build
-```
-
-### Lints and fixes files
-```
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Thanks to
+[CSS Rain Effect](https://codepen.io/arickle/pen/XKjMZY).
+
+Hans Grohe shower head.
