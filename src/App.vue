@@ -14,7 +14,7 @@
       <template v-else>Let it rain</template>
     </button>
     <p><span>The amount of consumed water.</span></p>
-    <p><span>Your have spent <b>{{ (counter ).toFixed(3)}}</b> litres of water today.</span></p>
+    <p><span>You have spent <b>{{ (counter ).toFixed(3)}}</b> litres of water today.</span></p>
     <p><span>This equals <b>{{ euros.toFixed(2) }}</b> € for cold water,</span></p>
     <p><span>or <b>{{ heating.toFixed(2) }}</b> € for heated water.</span></p>
     <p><span>On average, this is monthly <b>{{ monthly.toFixed(2) }}</b> € for water.</span></p>
@@ -45,7 +45,7 @@ export default {
         this.heating = this.euros + (this.counter * 0.058 * 88 / 1000)
         this.monthly = (this.euros * 0.4 + this.heating * 0.6) * 30
       }
-    }, 50)
+    }, 500)
   },
   methods: {
     makeItRain () {
@@ -71,7 +71,7 @@ export default {
           increment += 1;
           //add in a new raindrop with various randomizations to certain CSS properties
           drops += '<div class="drop" style="left: ' + increment * 2 +   'px; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.3' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.3' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.3' + randoHundo + 's;"></div></div>';
-          backdrops += '<div class="drop" style="left: ' + increment* 2 + 'px; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.3' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.3' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.3' + randoHundo + 's;"></div></div>';
+          backdrops += '<div class="drop" style="left: ' + increment * 2 + 'px; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 0.3' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.3' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 0.3' + randoHundo + 's;"></div></div>';
         }
 
         this.drops.push(drops)
