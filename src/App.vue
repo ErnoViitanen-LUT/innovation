@@ -13,11 +13,11 @@
       <template v-if="isRunning">Close faucet</template>
       <template v-else>Let it rain</template>
     </button>
-    <p><span>The amount of consumed water.</span></p>
-    <p><span>You have spent <b>{{ (counter ).toFixed(3)}}</b> litres of water today.</span></p>
-    <p><span>This equals <b>{{ euros.toFixed(2) }}</b> € for cold water,</span></p>
+    <p><span>The amount of water consumed today.</span></p>
+    <p><span>You have spent <b>{{ (counter ).toFixed(3)}}</b> litres of water.</span></p>
+    <p><span>This is the equivalent of <b>{{ euros.toFixed(2) }}</b> € for cold water,</span></p>
     <p><span>or <b>{{ heating.toFixed(2) }}</b> € for heated water.</span></p>
-    <p><span>On average, this is monthly <b>{{ monthly.toFixed(2) }}</b> € for water.</span></p>
+    <p><span>On average, this is <b>{{ monthly.toFixed(2) }}</b> € per month for water.</span></p>
     </div>
   </div>
 </template>
